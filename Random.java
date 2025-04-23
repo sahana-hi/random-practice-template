@@ -3,7 +3,7 @@ public class Random {
     // generates a random integer from 1 - 10, inclusive of both
     public static int random1To10() {
         int rand = 0;
-        // TODO: Code here
+        rand = randomXtoY(1, 10);
         return rand;
     }
 
@@ -11,7 +11,7 @@ public class Random {
     public static int random1ToN(int n)
     {
         int rand = 0;
-        // TODO: Code here
+        rand = randomXtoY(1, n);
         return rand;
     }
 
@@ -19,7 +19,9 @@ public class Random {
     public static int randomXtoY(int x, int y)
     {
         int rand = 0;
-        // TODO: Code here
+        int range = (y - x) + 1;
+        int offset = x;
+        rand = (int) ((Math.random() * range) + offset);
         return rand;
     }
 
